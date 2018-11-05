@@ -13,12 +13,20 @@ class Rating extends React.Component {
   componentWillReceiveProps(nextProps) {
     if(nextProps.rating > this.props.rating){
       this.setState({
-        increasing : ,
-        decreasing : nextProps.rating < this.props.rating,
+        increasing :true ,
+        decreasing :false ,
 
       })
     }
-  
+    else{
+      this.setState({
+        increasing :false ,
+        decreasing :true ,
+
+      })
+      
+    }
+
   }
 
   render() {
