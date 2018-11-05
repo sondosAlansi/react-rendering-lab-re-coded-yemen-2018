@@ -24,7 +24,7 @@ class Rating extends React.Component {
         decreasing :true ,
 
       })
-      
+
     }
 
   }
