@@ -24,6 +24,12 @@ class Survey extends React.Component {
   }
 
   maintainRating = () => this.forceUpdate();
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      rating : nextProps.rating > this.props.rating,
+
+    })
+  }
 
   render() {
     return (
@@ -36,12 +42,6 @@ class Survey extends React.Component {
     )
   }
 }
-componentWillReceiveProps(nextProps) {
-  this.setState({
-    rating : nextProps.rating > this.props.rating,
 
-  })
-}
 
 export default Survey;
-
