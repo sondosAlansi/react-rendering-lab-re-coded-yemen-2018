@@ -18,7 +18,7 @@ class Rating extends React.Component {
 
       })
     }
-    else{
+    else if(nextProps.rating < this.props.rating){
       this.setState({
         increasing :false ,
         decreasing :true ,
