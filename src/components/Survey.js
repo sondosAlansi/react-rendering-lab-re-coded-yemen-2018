@@ -36,11 +36,12 @@ class Survey extends React.Component {
     )
   }
 }
-
-export default Survey;
 componentWillReceiveProps(nextProps) {
   this.setState({
     rating : nextProps.rating > this.props.rating,
 
   })
 }
+
+export default Survey;
+
