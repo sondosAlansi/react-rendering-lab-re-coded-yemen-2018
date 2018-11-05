@@ -30,7 +30,7 @@ class Animation extends React.Component {
     progressBar.className = "off on";
     setTimeout(() => (progressBar.className = "off"), 1100);
   };
-  shouldComponentUpdate(nextProps, nextState) {
+componentWillUpdate(nextProps, nextState){
     return (showLoadingBar());
   }
   render() {
