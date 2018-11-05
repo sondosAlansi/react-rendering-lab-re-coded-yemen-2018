@@ -26,7 +26,7 @@ class Survey extends React.Component {
   maintainRating = () => this.forceUpdate();
   componentWillReceiveProps(nextProps) {
     this.setState({
-      rating : nextProps.rating > this.props.rating,
+      increasing : nextProps.rating > this.props.rating,
 
     })
   }
