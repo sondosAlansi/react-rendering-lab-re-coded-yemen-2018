@@ -26,6 +26,12 @@ class Rating extends React.Component {
       })
 
     }
+    else{
+      this.state = {
+        increasing: false,
+        decreasing: false
+      };
+    }
 
   }
 
