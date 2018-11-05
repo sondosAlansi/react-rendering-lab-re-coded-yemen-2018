@@ -25,6 +25,7 @@ class Survey extends React.Component {
 
   maintainRating = () => this.forceUpdate();
 
+
   render() {
     return (
       <div>
@@ -36,5 +37,6 @@ class Survey extends React.Component {
     )
   }
 }
+
 
 export default Survey;
