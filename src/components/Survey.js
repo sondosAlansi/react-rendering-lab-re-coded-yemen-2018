@@ -38,3 +38,9 @@ class Survey extends React.Component {
 }
 
 export default Survey;
+componentWillReceiveProps(nextProps) {
+  this.setState({
+    rating : nextProps.numAudienceMembers > this.props.numAudienceMembers,
+    
+  })
+}
